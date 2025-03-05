@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 class DetailViewModel @Inject constructor(private val repository: TweetRepository) : ViewModel() {
 
-    
+
     val tweet: StateFlow<List<TweetList>>
         get() = repository.tweets
 
